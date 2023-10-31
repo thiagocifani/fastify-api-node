@@ -1,0 +1,18 @@
+###
+GET http://localhost:3333/transactions HTTP/1.1
+content-type: application/json
+
+###
+GET http://localhost:3333/transactions/8fe70410-02e2-4004-ade6-cba75da60d30 HTTP/1.1
+content-type: application/json
+
+
+###
+POST http://localhost:3333/transactions HTTP/1.1
+content-type: application/json
+
+{
+  "title": "Salário",
+  "amount": 3000,
+  "type": "credit"
+}
